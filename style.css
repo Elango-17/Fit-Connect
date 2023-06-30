@@ -1,0 +1,335 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style:none;
+}
+:root{
+  --bg-colour: #222327;
+  --text-colour: #fff;
+  --main-colour: #29fd53;
+}
+body {
+  min-height: 100vh;
+  background: var(--bg-colour);
+  color: var(--text-colour);
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
+  animation: mymove 1s infinite;
+}
+@keyframes mymove {
+  50% {background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);}
+}
+section{
+  width: 100%;
+  height: 100vh;
+  background:url(body1.jpg)
+}
+
+
+/*Header1*/
+header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  justify-content: space-between;
+  padding: 28px 12%;
+  transition: all .50s ease;
+}
+.logo{
+  display: flex;
+  align-items: center;
+}
+.logo i{
+  color: var(--main-colour);
+  font-size: 40px;
+  margin-right: 3px;
+}
+.logo span{
+  color: var(--text-colour);
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+.navbar{
+  display: flex;
+}
+.navbar a{
+  color: var(--text-colour);
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 0px 30px;
+  transition: all  .50s ease;
+}
+.navbar a:hover{
+  color: var(--main-colour);
+}
+.navbar a.active{
+  color: var(--main-colour);
+}
+.main{
+  display: flex;
+  align-items: center;
+}
+.main a{
+  margin-right: 25px;
+  margin-left: 10px;
+  color:var(--text-colour)
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: all .50s ease;
+}
+.user{
+  display: flex;
+  align-items: center;
+}
+.user i{
+  color: var(--main-colour);
+  font-size: 28px;
+  margin-right: 7px;
+}
+.main a:hover{
+  color: var(--main-colour);
+}
+#menu-icon{
+  font-size: 35px;
+  color: var(--text-colour);
+  cursor: pointer;
+  z-index: 10001;
+  display: none;
+}
+
+@media (max-width: 1280px){
+  header{
+    padding: 14px 2%;
+    transition: .2s;
+  }
+  .navbar a{
+    padding: 5px 0;
+    margin: 0px 20px;
+  }
+}
+
+@media (max-width: 1090px){
+    #menu-icon{
+      display: block;
+    }
+    .navbar{
+      position: absolute;
+      top: 100%;
+      right: -100%;
+      width: 270px;
+      height: 35vh;
+      background: var(--main-colour);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      border-radius: 10px;
+      transition: all .50s ease;
+    }
+    .navbar a{
+      display: block;
+      margin: 12px 0;
+      padding: 0px 25px;
+      transition: all .50s ease;
+    }
+    .navbar a:hover{
+      color: var(--text-colour);
+      transform: translateY(5px);
+    }
+    .navbar a.active{
+      color:var(--text-colour);
+    }
+    .navbar.open{
+      right: 2%;
+    }
+}
+
+ /* Create two unequal columns that floats next to each other */
+/* Left column */
+  .leftcolumn {   
+    float: right;
+    width: 75%;
+    background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
+  }
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
+    padding-left: 20px;
+  }
+  /* Fake image */
+  div.fakeimg {
+      margin: 5px;
+      border: 1px solid #ccc;
+      float: left;
+      width: 180px;
+    }
+    
+  div.fakeimg:hover {
+      border: 1px solid #777;
+    }
+    
+    div.fakeimg {
+      width: 100%;
+      height: auto;
+    }
+
+  /* Add a card effect for articles */
+  .card {
+    background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
+    padding: 20px;
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+
+  }
+  /* Clear floats after the columns */
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
+
+/*page3*/
+
+  div.page3 {
+    border: 1px solid #ccc;
+  }
+  
+  div.page3:hover {
+    border: 1px solid #777;
+  }
+  
+  div.page3 img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .text{
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0 6px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+/*Over Flow*/
+  #overflowTest {
+    padding: 15px;
+    width: 100%;
+    height: 500px;
+    overflow:scroll;
+    font-family: 'Times New Roman', Times, serif;
+    border: 1px solid #ccc;
+  }
+
+/*sign up*/
+
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=Password], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=Mobile-No], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=OTP], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=button] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=button]:hover {
+    background-color: #45a049;
+  }
