@@ -1,120 +1,234 @@
 <!DOCTYPE html>
 <html>
-     <head>
+      <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
         <title>FIT CONNECT
         </title>
-    </head>
+      </head>
     <body>
-      <div style="background-image:url(200.gif);"> 
-        <h1 style="color:black;">FIT CONNECT </h1> 
-        <h2 style="color: black;">Let You Get Fit</h2>
-        <P><b><a href="Fitness.html" style="color:black;">FITNESS</a>
-          &emsp;&emsp;&emsp;<a href="Care.html" style="color:black;">CARE</a>
-          &emsp;&emsp;&emsp;<a href="Mind.html" style="color: black;">MIND</a> 
-          &emsp;&emsp;&emsp;<a href="Training.html" style="color: black;">TRAINING</a>
-          &emsp;&emsp;&emsp;<a href="Careers.html" style="color: black;">CAREERS</a>
-          &emsp;&emsp;&emsp;<a href="Store.html" style="color: black;">STORE</b></p></a>     
-          <img src="200.gif" width="1448" height="700">
-      </div>   
-      <div style="background-image:url(colour.gif);">
+      <div>
+      <header> 
+           <a href="#" class="logo"><i class="ri-infinity-line"></i><span>FIT CONNECT</span></a>
+           <ul class="navbar">
+           <li><a  style="cursor:pointer" href="Home.html" class="active">HOME</a></li>
+           <li><a style="cursor:pointer" href="Fitness.html">FITNESS</a></li>
+           <li><a style="cursor:pointer" href="Mind.html" >MIND</a></li>
+           <li><a style="cursor:pointer" href="Training.html">TRAINING</a></li>     
+           <li><a style="cursor:pointer" href="Store.html">STORE</b></a></li></ul>
+           <div class="main">
+           <a href="#" class="user"><i class="ri-user-fill"></i>Sign In</a>
+           <div class="bx bx-menu" id="menu-icon"></div>
+      </div>
+      </header> 
+      <section></section>
+      <br>
+      <hr>
+      <!-- javascript link-->
+      <script type="text/javascript" src="script.js"></script>
+      <div class="row">
+        <div class="leftcolumn">
+          <div class="card">
+            <h3>Achieve Your Fitness Goals with Us</h3>
+            <br>
+            <div class="fakeimg" style="height:500px;"><img src="body.jpg" width="100%" height="100%"></div>
+            <br>
+            <br>
+            <p>Are you ready to embark on a journey to a healthier, fitter you? Look no further! Our fitness program is designed to help individuals of all fitness levels reach their goals and unleash their full potential. Whether you're a beginner taking your first steps into the world of fitness or a seasoned athlete looking to take your training to the next level, we've got you covered.</p>
+          </div>
+          <div class="card">
+            <h3>Expert Guidance and Support</h3>
+            <br>
+            <div class="fakeimg" style="height:500px;"><img src="2.jpg" width="100%" height="100%"></div>
+            <p>We understand that starting a fitness journey can be overwhelming, but you don't have to do it alone. Our team of certified trainers and fitness experts is dedicated to helping you succeed. They will guide you through proper exercise techniques, offer nutritional advice, and provide the motivation and support you need to stay on track. With their expertise and your determination, you'll be amazed at what you can achieve.</p>
+          </div>
+        </div>
+        <div class="rightcolumn">
+          <div class="card">
+            <h3>About Me</h3>
+            <br>
+            <div class="fakeimg" style="height:400px;"><img src="3.jpg" width="100%" height="100%"></div>
+            <br>
+            <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+          </div>
+          <div class="card">
+            <h3>Popular Post</h3>
+            <div class="fakeimg"><p><img src="body.jpg" width="100%" height="100%"></p></div>
+            <div class="fakeimg"><p><img src="body.jpg" width="100%" height="100%"></p></div>
+            <div class="fakeimg"><p><img src="body.jpg" width="100%" height="100%"></p></div>
+          </div>
+          <div class="card">
+            <h3>Follow Our Page</h3>
+            <p>To know your will</p>
+          </div>
+        </div>
+      </div>
+      <br>
+      <hr>
+      <h2 class="text">Responsive Image Gallery</h2>
+      <h4 class="text">Resize the browser window to see the effect.</h4>
+      <div class="responsive">
+        <div class="page3">
+          <a target="_blank" href="12.gif">
+          <img src="12.gif"  width="600" height="400">
+          </a>
+          <div class="desc">Add a description of the image here</div>
+        </div>
+      </div>
+      <div class="responsive">
+        <div class="page3">
+          <a target="_blank" href="13.gif">
+            <img src="13.gif" width="600" height="400">
+          </a>
+          <div class="desc">Add a description of the image here</div>
+        </div>
+      </div>
+      <div class="responsive">
+        <div class="page3">
+          <a target="_blank" href="14.gif">
+            <img src="14.gif"  width="600" height="400">
+          </a>
+          <div class="desc">Add a description of the image here</div>
+        </div>
+      </div>
+      <div class="responsive">
+        <div class="page3">
+          <a target="_blank" href="11.gif">
+            <img src="11.gif"  width="600" height="400">
+          </a>
+          <div class="desc">Add a description of the image here</div>
+        </div>
+      </div> 
+      <div class="clearfix"></div>
+      <div class="text" style="padding:6px;">
+        <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
+        <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
+      </div>
+      <br>
+      <hr>
+      <div id="overflowTest">
         <ol>
-        <h2>Welcome To Our Page:</h2>
+        <h3>Welcome to our page:</h3>
+        <br>
         <p>Your Ultimate Source for Fitness and Wellness Theories!
-
-          At Fit Connect, we believe that understanding the underlying theories behind fitness and wellness practices is essential 
-          for achieving long-term success and maintaining a healthy lifestyle. Our web page is dedicated to providing you with in-depth 
-          knowledge and insights into various theories that shape the world of fitness and wellness. Whether you're a beginner or a seasoned
-           fitness enthusiast, our content will empower you to make informed decisions and optimize your well-being journey.
-
-           <h2>Benifits of Joining in Fit Connect:</h2>
-           By joining Fit Connect, you gain access to a wide range of benefits that will support and enhance your fitness and wellness journey. Here are some key advantages of becoming a member of our webpage:
-
-            Comprehensive Knowledge Base: Gain access to a wealth of information and resources on fitness and wellness theories. Our content is carefully curated to provide you with accurate, evidence-based information, empowering you to make informed decisions about your health.
-            
-            <h3><li>Guidance:</li></h3>
-            Benefit from the expertise of qualified professionals and industry experts in the field of fitness and wellness. Our team is dedicated to sharing their knowledge and answering your questions to help you navigate through the complexities of various theories.
-            
-            <h3><li>Personalized Recommendations:</li></h3> 
-            Receive personalized recommendations based on your goals, preferences, and fitness level. Whether you're looking for workout routines, nutrition advice, or stress management techniques, our platform tailors recommendations to meet your unique needs.
-            
-            <h3><li>Exclusive Offers and Discounts:</li></h3>
-             Enjoy special offers, discounts, and promotions on fitness products, wellness services, and partner brands. As a Fit Connect member, you'll have access to exclusive deals that support your fitness journey without breaking the bank.
-            
-            <h3><li>Interactive Tools and Features:</li></h3>
-             Take advantage of interactive tools, such as workout trackers, meal planners, and progress charts, to monitor and track your fitness goals. These features help you stay organized, motivated, and accountable on your path to success.
-            
-            <h3><li>User-Friendly Interface:</li></h3>
-             Enjoy a seamless and user-friendly browsing experience on our webpage. Our intuitive design and easy navigation ensure that you can quickly find the information you need, making your journey towards a healthier lifestyle more convenient and enjoyable.
-            
-            <h3><li>Access Anytime, Anywhere:</li></h3>
-             Our webpage is accessible 24/7 from any device with an internet connection. Whether you're at home, in the gym, or on the go, you can access Fit Connect whenever it suits you best.</p></ol>
+            At Fit Connect, we believe that understanding the underlying theories behind fitness and wellness practices is essential 
+            for achieving long-term success and maintaining a healthy lifestyle. Our web page is dedicated to providing you with in-depth 
+            knowledge and insights into various theories that shape the world of fitness and wellness. Whether you're a beginner or a seasoned
+            fitness enthusiast, our content will empower you to make informed decisions and optimize your well-being journey.</p>
+            <br>
+            <h3>Benifits of Joining in Fit Connect:</h3>
+            <br>
+            <p>By joining Fit Connect, you gain access to a wide range of benefits that will support and enhance your fitness and wellness journey. Here are some key advantages of becoming a member of our webpage:
+            Comprehensive Knowledge Base: Gain access to a wealth of information and resources on fitness and wellness theories. Our content is carefully curated to provide you with accurate, evidence-based information, empowering you to make informed decisions about your health.</p>
+            <br>
+            <h4><li>1.Guidance:</li></h4>
+            <br>
+            <p>Benefit from the expertise of qualified professionals and industry experts in the field of fitness and wellness. Our team is dedicated to sharing their knowledge and answering your questions to help you navigate through the complexities of various theories.</p>
+            <br>
+            <h4><li>2.Personalized Recommendations:</li></h4>
+            <br> 
+            <p>Receive personalized recommendations based on your goals, preferences, and fitness level. Whether you're looking for workout routines, nutrition advice, or stress management techniques, our platform tailors recommendations to meet your unique needs.</p>
+            <br>
+            <h4><li>3.Exclusive Offers and Discounts:</li></h4>
+            <br>
+            <p>Enjoy special offers, discounts, and promotions on fitness products, wellness services, and partner brands. As a Fit Connect member, you'll have access to exclusive deals that support your fitness journey without breaking the bank.</p>
+            <br>
+            <h4><li>4.Interactive Tools and Features:</li></h4>
+            <br>
+            <p>advantage of interactive tools, such as workout trackers, meal planners, and progress charts, to monitor and track your fitness goals. These features help you stay organized, motivated, and accountable on your path to success.</p>
+            <br>
+            <h4><li>5.User-Friendly Interface:</li></h4>
+            <br>
+            <p>Enjoy a seamless and user-friendly browsing experience on our webpage. Our intuitive design and easy navigation ensure that you can quickly find the information you need, making your journey towards a healthier lifestyle more convenient and enjoyable.</p>
+            <br>
+            <h4><li>6.Access Anytime, Anywhere:</li></h4>
+            <br>
+            <p>Our webpage is accessible 24/7 from any device with an internet connection. Whether you're at home, in the gym, or on the go, you can access Fit Connect whenever it suits you best.</p></ol>
+            <br>
+            <h3>Membership Plans For Joining in Fit Connect</h3>
+            <br>
+       <table border="4px" width="300" height="350">
+            <tr>
+            <th>Months</th>
+            <th>Price</th>
+            </tr>
+            <tr>
+            <td>1 Month</td>
+            <td>600</td>
+            </tr>
+            <tr>
+            <td>3 Month</td>
+            <td>1500</td>
+            </tr>
+            <tr>
+            <td>6 Month</td>
+            <td>3500</td>
+            </tr>
+            <tr>
+            <td>10 Month</td>
+            <td>5800</td>
+            </tr>
+            <tr>
+            <td>12 Month</td>
+            <td>7000</td>
+            </tr>
+        </table>
             <br>          
             <form>
               <input type="button" value="Join">
             </form>
            <p> Join Fit Connect today and embark on a transformative fitness and wellness journey. Empower yourself with knowledge, connect with a supportive community, and achieve your goals with confidence. Let us guide you towards a healthier, happier life</p>
        </div>
-       <div style="background-image:url(colour.gif);">
-      <h2><u><b>Membership Plans For Joining in Fit Connect</b></u></h2>
-       <table border="4px" width="300" height="350">
-          <tr>
-            <th>Months</th>
-            <th>Price</th>
-          </tr>
-          <tr>
-            <td>1 Month</td>
-            <td>600</td>
-          </tr>
-          <tr>
-            <td>3 Month</td>
-            <td>1500</td>
-          </tr>
-          <tr>
-            <td>6 Month</td>
-            <td>3500</td>
-          </tr>
-          <tr>
-            <td>10 Month</td>
-            <td>5800</td>
-          </tr>
-          <tr>
-            <td>12 Month</td>
-            <td>7000</td>
-          </tr>
-        </table>
-          <p style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Join Our Page For More Details</p>
-          <h2>For More Information See the Below Video</h2>
-           <iframe src="https://www.youtube.com/embed/pxRCmE-RVjA" title="How to PLAN Your WEEKLY Workout | Men&#39;s Fashion Tamil" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      </div>
        <hr>
-      <div style="background-image: url(colour.gif);">
-       <h2>To Join Our Connection</h2>
-       <h3>Sign up For Free</h3>
-       <form>
-         User Name:<input type="text" name="User Name"
+      <div>
+        <br>
+          <h3 style="font-family: 'Times New Roman', Times, serif;">For More Information See the Below Video</h3>
+          <br>
+          <iframe src="https://www.youtube.com/embed/pxRCmE-RVjA" title="How to PLAN Your WEEKLY Workout | Men&#39;s Fashion Tamil" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <br>
+      </div>
+      <hr>
+      <div style="font-family: 'Times New Roman', Times, serif;">
+       <br>
+       <h3>To Join Our Connection</h3>
+       <h4>Sign up For Free</h4>
+       <br>
+       <form >
+         USER NAME:<input type="text" name="User Name"
          placeholder="Enter Your Name">
          <br>
          <br>
          <br>
-         Password:<input type="Password" name="Password"
+         PASSWORD:<input type="Password" name="Password"
          placeholder="Enter Your Password">
          <br>
          <br>
          <br>
-         Mobile No:<input type="Moble No" name="Mobile No"
-         placeholder="Enter Your Mobile No">
+         MOBILE NO:<input type="Mobile-No" name="Mobile No"
+         placeholder="Enter Your Mobile Number">
          <br>
          <br>
          <br>
-         OTP:<input type="OTP" name="OTP"
-         placeholder="Enter the OTP"
-         <form>
+         OTP: &emsp;&emsp;&emsp;<input type="OTP" name="OTP"
+         placeholder="Enter the OTP">
+         </form>
+         <br>
+         <form style="text-align: center;">
          <input type="button" value="Submit">
        </form>
       </div>
-      <div style="background-image: url(colour.gif);">
-        <h3 >Connect With Our Social Medias For More Informations </h3>
+      <br>
+      <hr>
+      <div>
+        <h3>Connect With Our Social Medias For More Informations </h3>
         <h4>Instagram</h4>
       </div>     
     </body>
