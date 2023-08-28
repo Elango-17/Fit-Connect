@@ -6,30 +6,34 @@
   text-decoration: none;
   list-style:none;
 }
+
 :root{
   --bg-colour: #222327;
   --text-colour: #fff;
   --main-colour: #29fd53;
 }
-body {
+
+body{
   min-height: 100vh;
   background: var(--bg-colour);
   color: var(--text-colour);
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
-  animation: mymove 1s infinite;
+  background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%); 
 }
+
+/*
+animation: mymove 1s infinite;
 @keyframes mymove {
   50% {background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);}
-}
-section{
+}*/
+
+.sec{
   width: 100%;
   height: 100vh;
   background:url(body1.jpg)
 }
-
 
 /*Header1*/
 header{
@@ -87,6 +91,7 @@ header{
   font-weight: 500;
   transition: all .50s ease;
 }
+
 .user{
   display: flex;
   align-items: center;
@@ -96,6 +101,7 @@ header{
   font-size: 28px;
   margin-right: 7px;
 }
+
 .main a:hover{
   color: var(--main-colour);
 }
@@ -117,7 +123,6 @@ header{
     margin: 0px 20px;
   }
 }
-
 @media (max-width: 1090px){
     #menu-icon{
       display: block;
@@ -173,27 +178,27 @@ header{
       border: 1px solid #ccc;
       float: left;
       width: 180px;
-    }
-    
+    }  
   div.fakeimg:hover {
       border: 1px solid #777;
-    }
-    
+    }  
     div.fakeimg {
       width: 100%;
       height: auto;
     }
 
   /* Add a card effect for articles */
+
   .card {
     background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
     padding: 20px;
     margin-top: 20px;
     font-family: 'Times New Roman', Times, serif;
     text-align: justify;
-
   }
+
   /* Clear floats after the columns */
+
   .row::after {
     content: "";
     display: table;
@@ -215,6 +220,10 @@ header{
   }
 
 /*page3*/
+
+.p3{
+  background:  radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
+}
 
   div.page3 {
     border: 1px solid #ccc;
@@ -279,57 +288,77 @@ header{
     overflow:scroll;
     font-family: 'Times New Roman', Times, serif;
     border: 1px solid #ccc;
+    background:  radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
   }
 
-/*sign up*/
 
-  input[type=text], select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+/*Footer*/
+
+section{
+  padding: 80px 13% 70px;
+}
+.footer{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+  gap: 1.9%;
+  background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 100;
+}
+.footer-content h4{
+  color: #fff;
+  margin-bottom: 1.5rem;
+  font-size: 20px;
+}
+.footer-content li{
+  margin-bottom: 16px;
+}
+.footer-content li a{
+  display: block;
+  color: #d6d6d6;
+  font-size: 15px;
+  font-weight: 400;
+  transition: all .40s ease;
+}
+.footer-content li a:hover{
+  transform: translateY(-3px) translateX(-5px);
+  color: #fff;
+}
+.footer-content p{
+  color: #d6d6d6;
+  font-size: 16px;
+  line-height: 30px;
+  margin: 20px 0;
+}
+.icons a{
+  display: inline-block;
+  font-size: 22px;
+  color: #d6d6d6;
+  margin-right: 17px;
+  transition: all .40s ease;
+}
+.icons a:hover{
+  color: #fff;
+  transform: translateY(-5px);
+}
+@media (max-width:1690px){
+   section{
+    padding: 50px 5% 40px;
+   }
+}
+@media (max-width:1120px){
+  .footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+    gap: 2rem;
   }
-  input[type=Password], select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+}
+@media (max-width:700px){
+  .footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,auto));
+    gap: 2.5rem;
   }
-  input[type=Mobile-No], select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  input[type=OTP], select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  input[type=button] {
-    width: 100%;
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  input[type=button]:hover {
-    background-color: #45a049;
-  }
+}
